@@ -189,8 +189,10 @@
                          Margin="0 5 0 0"
                          FontFamily="Artifakt Element Medium"
                          Style="{StaticResource TextBoxStyle1}"
-                         local:TextBoxHelper.Placeholder="Email">
-                </TextBox>
+                         local:TextBoxHelper.Placeholder="Email"
+                         Text = "{Binding Email}" 
+                         />
+                
             </StackPanel>
         </StackPanel>
 
@@ -207,7 +209,8 @@
                          Margin="0 5 0 0"
                          FontFamily="Artifakt Element Medium"
                          Style="{StaticResource TextBoxStyle1}"
-                         local:TextBoxHelper.Placeholder="Nazwa użytkownika">
+                         local:TextBoxHelper.Placeholder="Nazwa użytkownika"
+                         Text="{Binding Username}">
                 </TextBox>
             </StackPanel>
         </StackPanel>
@@ -224,7 +227,8 @@
                   Margin="0 5 0 0"
                   FontFamily="Artifakt Element Medium"
                   Style="{StaticResource TextBoxStyle1}"
-                  local:TextBoxHelper.Placeholder="Hasło">
+                  local:TextBoxHelper.Placeholder="Hasło"
+                  Text="{Binding Password}">
                 </TextBox>
             </StackPanel>
         </StackPanel>
@@ -232,16 +236,16 @@
         <StackPanel Grid.Row="5">
             <StackPanel Orientation="Horizontal"
                  HorizontalAlignment="Center">
-
             </StackPanel>
 
             <StackPanel Orientation="Horizontal"
                  HorizontalAlignment="Center">
                 <TextBox Width="150"
-                  Margin="0 5 0 0"
-                  FontFamily="Artifakt Element Medium"
-                  Style="{StaticResource TextBoxStyle1}"
-                  local:TextBoxHelper.Placeholder="Powtórz hasło">
+                      Margin="0 5 0 0"
+                      FontFamily="Artifakt Element Medium"
+                      Style="{StaticResource TextBoxStyle1}"
+                      local:TextBoxHelper.Placeholder="Powtórz hasło"
+                      Text="{Binding RepeatedPassword}">
                 </TextBox>
             </StackPanel>
         </StackPanel>

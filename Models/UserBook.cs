@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TodoApp.DBContext
+namespace TodoApp.Models
 {
-    internal class TodoDbContext
+    class UserBook
     {
     }
 }

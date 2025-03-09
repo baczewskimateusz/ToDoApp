@@ -189,8 +189,9 @@
                          Margin="0 5 0 0"
                          FontFamily="Artifakt Element Medium"
                          Style="{StaticResource TextBoxStyle1}"
-                         local:TextBoxHelper.Placeholder="Nazwa użytkownika">
-                </TextBox>
+                         local:TextBoxHelper.Placeholder="Nazwa użytkownika"
+                         Text="{Binding Username}"/>
+
             </StackPanel>
         </StackPanel>
 
@@ -210,8 +211,9 @@
                          Margin="0 5 0 0"
                          FontFamily="Artifakt Element Medium"
                          Style="{StaticResource TextBoxStyle1}"
-                        local:TextBoxHelper.Placeholder="Hasło">
-                </TextBox>
+                        local:TextBoxHelper.Placeholder="Hasło"
+                         Text="{Binding Password}"/>
+
             </StackPanel>
         </StackPanel>
 

@@ -8,8 +8,16 @@ namespace TodoApp.Models
 {
     public class User
     {
-        private string? Name;
-        private string? Email;
-        private string? Password;
+        public string? Userame;
+        public string? Email;
+        public string? Password;
+
+
+        public User(string username, string email, string passowrd) 
+        {
+            Userame = username;
+            Email = email;
+            Password = passowrd;
+        }
     }
 }
