@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Input;
 
 namespace TodoApp.ViewModels
 {
@@ -31,6 +27,8 @@ namespace TodoApp.ViewModels
             }
         }
 
-
+        public ICommand LoginCommand { get; }
+        public ICommand ForgotPasswordCommand { get; }
+        public ICommand RegisterCommand { get;}
     }
 }

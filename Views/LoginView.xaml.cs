@@ -1,13 +1,13 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 
 namespace TodoApp.Views
 {
     /// <summary>
     /// Logika interakcji dla klasy LoginWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class LoginView: UserControl
     {
-        public LoginWindow()
+        public LoginView()
         {
             InitializeComponent();
         }

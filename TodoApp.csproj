@@ -14,12 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\password.png">
+    <Content Include="Images\password.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Images\user.png">
+    </Content>
+    <Content Include="Images\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

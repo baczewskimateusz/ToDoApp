@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace TodoApp.ViewModels
 {
@@ -50,7 +51,10 @@ namespace TodoApp.ViewModels
                 OnPropertyChanged(nameof(RepeatedPassword));
             }
         }
-                   
+
+        public ICommand RegisterCommand {  get; }
+        public ICommand ReturnCommand { get; }
+                    
     }
 
 }
