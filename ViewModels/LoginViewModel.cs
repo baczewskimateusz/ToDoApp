@@ -1,4 +1,6 @@
 ﻿using System.Windows.Input;
+using TodoApp.Commands;
+using TodoApp.Models;
 
 namespace TodoApp.ViewModels
 {
@@ -30,5 +32,12 @@ namespace TodoApp.ViewModels
         public ICommand LoginCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
         public ICommand RegisterCommand { get;}
+
+        public LoginViewModel()
+        {
+            LoginCommand = new LoginCommand();
+            ForgotPasswordCommand = new ForgotPasswordCommand();
+            RegisterCommand = new RegisterCommand();
+        }
     }
 }

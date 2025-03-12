@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using TodoApp.Commands;
 
 namespace TodoApp.ViewModels
 {
@@ -54,7 +55,13 @@ namespace TodoApp.ViewModels
 
         public ICommand RegisterCommand {  get; }
         public ICommand ReturnCommand { get; }
-                    
+
+        public RegisterViewModel()
+        {
+            ReturnCommand = new ReturnCommand();
+            RegisterCommand = new RegisterCommand();
+        }
+
     }
 
 }
